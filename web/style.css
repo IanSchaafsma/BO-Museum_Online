@@ -2,44 +2,50 @@ header{
     background-color: #222832;
     color: white;
     height: 70px;
-    
+   
 }
-
+ 
 body{
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
     margin: 0%;
 }
-
+ 
 img{
     width: 100%;
     border-radius: 2px;
-    
+   
 }
-
+ 
 button{
     position: absolute;
-    left: 700px;
-    top:  450px; 
+    left: 820px;
+    top:  450px;
     color: black;
     background-color: whitesmoke;
     width: 10%;
     border-radius: 5%;
     border: 5px solid aliceblue;
-
+ 
 }
-
+ 
 button:hover{
     background-color: gray;
 }
-
+ 
 h1{
     position: absolute;
-    left: 600px;
-    bottom: 400px;
-    color: aliceblue;
-    
+    bottom: 56%;
+    left: 37.25%;
+    color: black;
+   
+   
+   
 }
-
-.h1.2
+ 
+#h12{
+    position: absolute;
+    left: 37.5%;
+    color: aliceblue;
+}
