@@ -4,26 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">      
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href=https://fonts.gstatic.com/ crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>BO-Museum_Online</title>
 </head>
 <body>
- 
+
     <header>
-        knop
+        <img id= "fotoheader" src="img/museumlogo.png" alt="Foto scheepsvaart museum">
+ 
+        <p id= "openingstijden">Dinsdag t/m Vrijdag 10:00-17:00</p>
+ 
+        <button class= "knop" id= "contact" onclick="window.scrollTo(0,document.body.scrollHeight);">Contact</button>
+        <button class= "knop" id= "route"><a href="route.html">Route</a></button>
+        <button class= "knop" id= "tickets" onclick="window.open('https://tickets.hetscheepvaartmuseum.nl/nl/tickets')">Tickets</button>
+   
     </header>
  
-    <h1>Scheepsvaart Museum</h1>
-    <h1 id="h12">Scheepsvaart Museum</h1>
+
+    <h1 >Scheepsvaart Museum</h1>
+    <h1 id="h12" >Scheepsvaart Museum</h1>
+    <button id="knoproute" onclick="console.log('het werkt')">KLIK HIER</button>
+    <img id="Frontfoto" src="img/scheepvaartmuseum.jpg" alt="Foto van het scheepsvaart museum met de boot">
  
-    <button>KLIK HIER</button>
+    <article class="textbox">
+        <h2>Geschiedenis</h2>
+        <p>Het museum is in 1916 opgericht door een vereniging, de Vereeniging
+            Nederlandsch Historisch Scheepvaart Museum. Vanaf 1922, de
+            datum van de opening van het gebouw, tot 1975 was deze vereniging
+            ook organisatie die het museum, het Nederlandsch Historisch
+            Scheepvaart Museum exploiteerde (afkorting NHSM en sinds de
+            jaren negentig van vorige eeuw meestal VNHSM).</p>
+    </article>
+
+
+    <div id="slideshow">
+        <div class="slide-wrapper">
+
+        <!-- Define each of the slides
+         and write the content -->
+
+            <div class="slide">
+                <img class= "fotoslide2" src="img/FotoSlide1.jpg" alt="FotoMuseum1">
+            </div>
+            <div class="slide">
+                <img class= "fotoslide2" src="img/fotoslide2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img class= "fotoslide2" src="img/fotoslide3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img class= "fotoslide2" src="img/fotoslide4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img class= "fotoslide2" src="img/fotoslide5.jpg" alt="">
+            </div>
+        </div>
+    </div>
  
-    <img src="img/scheepvaartmuseum.jpg" alt="Foto van het scheepsvaart museum met de boot">
- 
-   
- 
+    <footer>
+        <img id= "footerfoto" src="img/museumlogo.png" alt="Foto scheepsvaart museum">
+        <p id= "contactgegevens1">
+            Adres:
+            Kattenburgerplein 1
+            1018 KK Amsterdam
+        </p>
+        <p id= "contactgegevens2">
+            Nummer: 020 523 2222
+        </p>
+        <p id= "contactgegevens3">
+            Mail: info@hetscheepvaartmuseum.nl
+        </p>
+
+        <p id= "revieuwp">Reviews:</p>
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+
+    </footer>
 </body>
 </html>

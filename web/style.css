@@ -1,25 +1,77 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 header{
     background-color: #222832;
     color: white;
-    height: 70px;
-   
-}
+    height: 100px;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
  
+}
+
 body{
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
     margin: 0%;
+    background-color: rgb(121, 128, 235);
+}
+
+.knop{
+    background-color: #517aff;
+    width: 150px;
+    height: 50px;
+    margin-left: 5%;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+ 
+}
+
+body > header > button > a{
+  text-decoration: none;
+  
+}
+
+#tickets{
+    background-color: orange;
+    cursor: pointer;
+}
+
+#tickets.knop:hover{
+    background-color: rgb(255, 188, 62);
 }
  
-img{
+.knop:hover{
+    background-color: rgb(104, 152, 255);
+}
+ 
+#fotoheader{
+    width: 200px;
+    padding-left: 0.5%;
+    height: 80px;
+}
+ 
+#openingstijden{
+    padding-left: 3%;
+    color: slategray;
+    margin-right: 28%;
+}
+ 
+#Frontfoto{
     width: 100%;
     border-radius: 2px;
-   
-}
+    margin-top: 0,5%;
+    align-items: center;
+    margin-bottom: -26px;
  
-button {
-    background-color: #4CAF50; /* Green */
+}
+
+#knoproute {
+    background-color: orange;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -28,26 +80,190 @@ button {
     display: inline-block;
     font-size: 16px;
     position: absolute;
-    left: 780px;
-    top:  410px;
+    transition: 0.1s transform;
+    left: 46%;
+    bottom: 46%;
+ 
   }
  
-button:hover{
+#knoproute:hover{
     background-color: gray;
+    border: 1px solid white;
+    transform: scale(1.05);
+    cursor: pointer;
+
+
 }
  
 h1{
     position: absolute;
-    bottom: 50%;
-    left: 37.25%;
+    bottom: 48%;
+    left: 36.25%;
     color: black;
-   
-   
-   
+    font-weight: 800;
+    font-size: 250%;
 }
  
 #h12{
     position: absolute;
-    left: 37.5%;
+    left: 36.5%;
     color: aliceblue;
 }
+
+
+
+
+.textbox{
+  position: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(#222832,90%, #090b0e);
+  
+}
+
+.textbox > h2{
+  margin: 20px;
+  padding-top: 16px;
+}
+
+.textbox > p{
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+
+  /* Styling the area of the slides */
+  #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+
+  /* Add animation to the slides */
+  .slide-wrapper {
+     
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+   
+  /* Set the background color
+  of each of the slides */
+  .slide:nth-child(1) {
+    background: green;
+  }
+   
+  .slide:nth-child(2) {
+    background: pink;
+  }
+   
+  .slide:nth-child(3) {
+    background: red;
+  }
+   
+  .slide:nth-child(4) {
+    background: yellow;
+  }
+   
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+     
+  /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+   
+    60% {
+      margin-left: calc(-728px * 2);
+    }
+   
+    80% {
+      margin-left: calc(-728px * 3);
+    }
+  }
+ 
+.fotoslide2{
+    margin: auto;
+    width: 106%;
+}
+ 
+
+ 
+footer{
+    background-color: #222832;
+    color: white;
+    height: 100px;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+ 
+}
+ 
+ 
+#footerfoto{
+    width: 200px;
+    padding-left: 0.5%;
+    height: 80px;
+    font-size: smaller;
+}
+ 
+#contactgegevens1{
+    padding-left: 2.5%;
+    color: slategray;
+    font-size: smaller;
+}
+ 
+#contactgegevens2{
+    padding-left: 3%;
+    color: slategray;
+    font-size: smaller;
+}
+ 
+#contactgegevens3{
+    padding-left: 3%;
+    color: slategray;
+    font-size: smaller;
+    margin-right: 20%;
+}
+ 
+#revieuwp{
+    color: slategray;
+    font-size: smaller;
+    margin-right: 1%;
+}
+ 
+ 
+.checked {
+    color: orange;
+    font-size: 150%;
+    padding-top: 0.1%;
+ 
+  }
+ 
+  .fa-star{
+      padding-top: 0.2%;
+    font-size: 150%;
+  }
+
