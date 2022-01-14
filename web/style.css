@@ -21,7 +21,7 @@ body{
 }
 
 .knop{
-    background-color: #517aff;
+    background-color: rgb(121, 128, 235);
     width: 150px;
     height: 50px;
     margin-left: 5%;
@@ -33,6 +33,7 @@ body{
 
 body > header > button > a{
   text-decoration: none;
+  color: black;
   
 }
 
