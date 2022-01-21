@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -28,6 +30,7 @@ body{
     font-size: large;
     cursor: pointer;
     border-radius: 5px;
+    border: none;
  
 }
 
@@ -93,14 +96,15 @@ body > header > button > a{
   }
  
 #knoproute:hover{
-    background-color: gray;
+    background-color: rgb(255, 190, 68);
     border: 1px solid white;
     transform: scale(1.05);
     cursor: pointer;
 
 
 }
- 
+
+
 h1{
     position: absolute;
     bottom: 48%;
@@ -116,6 +120,9 @@ h1{
     color: aliceblue;
 }
 
+#title{
+  
+}
 
 
 
