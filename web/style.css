@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -15,11 +19,12 @@ header{
 }
 
 body{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
-    margin: 0%;
     background-color: rgb(121, 128, 235);
+    min-height: 100vh;
+    position: relative;
 }
 
 .knop{
@@ -30,7 +35,6 @@ body{
     font-size: large;
     cursor: pointer;
     border-radius: 5px;
-    border: none;
  
 }
 
@@ -57,46 +61,50 @@ body > header > button > a{
     width: 200px;
     padding-left: 0.5%;
     height: 80px;
+
 }
  
 #openingstijden{
+   font-size: 100%;
     padding-left: 3%;
     color: slategray;
     margin-right: 28%;
 }
  
-#Frontfoto{
-    width: 100%;
-    border-radius: 2px;
-    margin-top: 0,5%;
-    align-items: center;
-    margin-bottom: -26px;
- 
+.frontBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Frontfoto{
+  height: 80vh;
+  width: 100vw;
+
 }
 
 #knoproute {
-    background-color: orange;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    transition: 0.1s transform;
-    left: 46%;
-    bottom: 46%;
- 
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  transition: 0.1s transform;
+  position: absolute;
+  top: 27%;
+  left: 46%;
   }
 
-  #knoproute > a{
+ #knoproute > a{
     text-decoration: none;
     color: white;
   }
  
 #knoproute:hover{
-    background-color: rgb(255, 190, 68);
+    background-color: gray;
     border: 1px solid white;
     transform: scale(1.05);
     cursor: pointer;
@@ -104,27 +112,17 @@ body > header > button > a{
 
 }
 
-
-h1{
-    position: absolute;
-    bottom: 48%;
-    left: 36.25%;
-    color: black;
-    font-weight: 800;
-    font-size: 250%;
+#centered {
+  position: absolute;
+  top: 24%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  -webkit-text-stroke: 0.35px #222832; /* stroke width and color */
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;  
 }
- 
-#h12{
-    position: absolute;
-    left: 36.5%;
-    color: aliceblue;
-}
-
-#title{
-  
-}
-
-
 
 .textbox{
   position: flex;
@@ -136,7 +134,8 @@ h1{
 }
 
 .textbox > h2{
-  margin: 20px;
+  margin-top: -5px;
+  margin-bottom: 20px;
   padding-top: 16px;
 }
 
@@ -279,4 +278,3 @@ footer{
       padding-top: 0.2%;
     font-size: 150%;
   }
-

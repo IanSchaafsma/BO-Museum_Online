@@ -4,29 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17819d8242.js" crossorigin="anonymous"></script>
     <title>Scheepsvaart Museum Interactieve Route</title>
     <link rel="stylesheet" href="style-route.css">
 </head>
-<header>
-    <img id= "fotoheader" src="img/museumlogo.png" alt="Foto scheepsvaart museum">
 
-    <p id= "openingstijden">Dinsdag t/m Vrijdag 10:00-17:00</p>
-
-    <button class= "knop" id= "contact"><a href="index.html">Home Pagina</a></button>
-    <button class= "knop" id= "route"><a href="engels-route.html">Engels Vertaling</a></button>
-    <button class= "knop" id= "tickets" onclick="window.open('https://tickets.hetscheepvaartmuseum.nl/nl/tickets')">Tickets</button>
-
-</header>
 <body>
+    <header>
+        <img id= "fotoheader" src="img/museumlogo.png" alt="Foto scheepsvaart museum">
+    
+        <p id= "openingstijden">Dinsdag t/m Vrijdag 10:00-17:00</p>
+    
+        <button class= "knop" id= "contact"><a href="index.html">Home Pagina</a></button>
+        <button class= "knop" id= "route"><a href="engels-route.html">Engels Vertaling</a></button>
+        <button class= "knop" id= "tickets" onclick="window.open('https://tickets.hetscheepvaartmuseum.nl/nl/tickets')">Tickets</button>
+    
+    </header>
+
     <div class="bg">
         
     </div>
     <div id="container">
-        <img id="myImage" src="img/FotoSlide1.jpg" height="600px" alt="foto sb">
+        <img id="myImage" src="img/FotoSlide1.jpg" height="600" alt="foto sb">
         <div id="myInteraction">
             <div id="myTitle">Voer hier het nummer in hoever je bent!</div>
             <input type="text" id="myInput" autocomplete="off">
             <input type="button" value="voer in" onclick= "getInput()">
+        </div>
+    </div>
+    
+    
+    <nav class="directionbuttons">
+        <h3>Kies welke richting je op wilt:</h3>
+        <button class="knopNoord" onclick="goDirection('noord')">Noord</button>
+        <button class="knopOost"  onclick="goDirection('oost')">Oost</button>
+        <button class="knopZuid"  onclick="goDirection('zuid')">Zuid</button>
+        <button class="knopWest"  onclick="goDirection('west')">West</button>
+    </nav>
+
+    <article>
+        <h2 class="hader2">Laat hier een recensie achter!</h2>
+    </article>
+
+    <div class="container">
+        <div class="feedbackbox">
+            <div class="emoji">
+                <div id="emoji">
+                    <img src="img/poor.png">
+                    <img src="img/bad.png">
+                    <img src="img/okay.png">
+                    <img src="img/good.png">
+                    <img src="img/excellent.png">
+                </div>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
         </div>
     </div>
 

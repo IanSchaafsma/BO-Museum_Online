@@ -88,7 +88,15 @@ footer{
     margin-top: 70px;
  
 }
- 
+
+.directionbuttons{
+    position: absolute;
+    top: 300px;
+    right: 130px;
+    border: none;
+    text-decoration: none;
+    transform: scale(120%);
+}
  
 #footerfoto{
     width: 200px;
@@ -114,4 +122,58 @@ footer{
     color: slategray;
     font-size: smaller;
     margin-right: 20%;
+}
+
+.container{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.feedbackbox{
+    background: #222832;
+    padding: 50px 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 12px solid #222832;
+}
+
+.emoji{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.emoji img{
+    width: 80px;
+    margin: 0 10px;
+}
+
+#emoji{
+    display: flex;
+    align-items: center;
+    transform: translateX(-400px);
+    transition: 0.3s;
+}
+
+.rating .fas{
+    font-size: 40px;
+    color:#e4e4e4; 
+    cursor: pointer;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+}
+
+.hader2{
+    margin-top: 5%;
+    color: white;
 }
